@@ -789,7 +789,15 @@ img{
 }
 
 .portfolio__description{
-    font-size: var(--small-font-size);
+    margin-bottom: var(--mb-1);
+}
+
+.portfolio__button:hover .button__icon{
+    transform: translateX(.25rem);
+    -webkit-transform: translateX(.25rem);
+    -moz-transform: translateX(.25rem);
+    -ms-transform: translateX(.25rem);
+    -o-transform: translateX(.25rem);
 }
 
 /*==================== PROJECT IN MIND ====================*/

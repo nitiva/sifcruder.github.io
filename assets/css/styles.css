@@ -38,7 +38,7 @@
     --font-medium: 500;
     --font-semi-bold: 600;
 
-    /*========== Margenes Bottom ==========*/
+    /*========== Margins Bottom ==========*/
     /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
     --mb-0-25: .25rem;
     --mb-0-5: .5rem;
@@ -648,6 +648,7 @@ img{
     color: var(--first-color);
 }
 
+
 /*==================== SERVICES ====================*/
 .services__container{
     gap: 1.5rem;
@@ -672,11 +673,12 @@ img{
 }
 
 .services__content:hover{
-    box-shadow: 0 4px 8px rgba(0, 0, 0, .15);
+    box-shadow: 2px 8px 16px rgba(0, 0, 0, .15);
 }
 
 .services__icon{
-    display: block;font-size: 1.5rem;
+    display: block;
+    font-size: 1.5rem;
     color: var(--first-color);
     margin-bottom: var(--mb-1);
 }
@@ -692,11 +694,103 @@ img{
     font-size: var(--small-font-size);
 }
 
-/* Active Modal */
+.services__button:hover .button__icon{
+    transform: translateX(.25rem);
+    -webkit-transform: translateX(.25rem);
+    -moz-transform: translateX(.25rem);
+    -ms-transform: translateX(.25rem);
+    -o-transform: translateX(.25rem);
+}
 
+.services__modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    z-index: var(--z-modal);
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}
+
+.services__modal-content{
+    position: relative;
+    background-color: var(--container-color);
+    padding: 1.5rem;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+}
+
+.services__modal-services{
+    row-gap: 1rem;
+}
+
+.services__modal-service{
+    display: flex;
+}
+
+.services__modal-title{
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-1-5);
+}
+
+.services__modal-close{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    color: var(--first-color);
+    cursor: pointer;
+}
+
+.services__modal-icon{
+    color: var(--first-color);
+    margin-right: var(--mb-0-25);
+}
+
+/* Active Modal */
+.active-modal{
+    opacity: 1;
+    visibility: visible;
+}
 
 /*==================== PORTFOLIO ====================*/
+.portfolio__container{
+    overflow: initial;
+}
 
+.portfolio__content{
+    padding: 0 1.5rem;
+}
+
+.portfolio__img{
+    width: 265px;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+    justify-self: center;
+}
+
+.portfolio__title{
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-0-5);
+}
+
+.portfolio__description{
+    font-size: var(--small-font-size);
+}
 
 /*==================== PROJECT IN MIND ====================*/
 
@@ -738,6 +832,11 @@ img{
     -ms-border-radius: .5rem;
     -o-border-radius: .5rem;
     padding: .75rem 1rem .25rem;
+}
+
+.contact__label{
+    font-size: var(--smaller-font-size);
+    color: var(--title-color);
 }
 
 .contact__input{

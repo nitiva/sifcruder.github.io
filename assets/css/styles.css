@@ -896,7 +896,6 @@ img{
 }
 
 .project__img{
-    /* width: 34px; */
     justify-self: center;
 }
 
@@ -1312,7 +1311,7 @@ img{
         padding: 6rem 0 2rem 2.5rem;
     }
     .services__modal{
-        width: 450px;
+        width: 100vw;
     }
 
     .portfolio__img{
@@ -1341,6 +1340,9 @@ img{
     }
     .project__data{
         padding-top: .8rem;
+    }
+    .project__img{
+        margin-bottom: 2.5rem;
     }
 
     .footer__container{

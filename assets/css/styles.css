@@ -7,7 +7,7 @@
 
     /*========== Colors ==========*/
     /* Change favorite color */
-    --hue-color: 37; /*Orange 37 - Green 142 - Blue 230 - Pink 340*/
+    --hue-color: 230; /*Orange 37 - Green 142 - Blue 230 - Pink 340*/
 
     /* HSL color mode */
     --first-color: hsl(var(--hue-color), 100%, 51%);

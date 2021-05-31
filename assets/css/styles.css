@@ -7,7 +7,7 @@
 
     /*========== Colors ==========*/
     /* Change favorite color */
-    --hue-color: 142; /*Orange 37 - Green 142 - Blue 230 - Pink 340*/
+    --hue-color: 37; /*Orange 37 - Green 142 - Blue 230 - Pink 340*/
 
     /* HSL color mode */
     --first-color: hsl(var(--hue-color), 100%, 51%);
@@ -15,8 +15,8 @@
     --first-color-alt: hsl(var(--hue-color), 99%, 48%);
     --first-color-lighter: hsl(var(--hue-color), 100%, 70%);
     --title-color: hsl(var(--hue-color), 5%, 11%);
-    --text-color: hsl(var(--hue-color), 99%, 59%);
-    --text-color-light: hsl(var(--hue-color), 90%, 63%);
+    --text-color: hsl(160, 99%, 59%);
+    --text-color-light: hsl(160 90%, 63%);
     --input-color: hsl(var(--hue-color), 70%, 96%);
     --body-color: hsl(var(--hue-color), 60%, 99%);
     --dark-color: hsl(var(--hue-color), 0%, 0%);
@@ -188,7 +188,9 @@ img{
     align-items: center;
 }
 
-.nav__logo,
+.nav__logo{
+    color: var(--first-color);
+}
 .nav__toggle{
     color: var(--title-color);
     font-weight: var(--font-semi-bold);
@@ -245,6 +247,7 @@ img{
 
 .nav__link:hover{
     color: var(--first-color);
+    border-bottom: 1px;
 }
 
 .nav__icon{
